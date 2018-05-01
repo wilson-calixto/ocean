@@ -36,12 +36,12 @@ GameObject:
   - component: {fileID: 4055055294560874}
   - component: {fileID: 212770174362723776}
   - component: {fileID: 50451637119901578}
-  - component: {fileID: 60167867871095892}
   - component: {fileID: 114024338894891778}
   - component: {fileID: 114475727768645632}
   - component: {fileID: 111443984671732996}
   - component: {fileID: 95365231021644696}
   - component: {fileID: 114309573703096462}
+  - component: {fileID: 61693648737543590}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1318585551242102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.64, y: 0, z: 0}
+  m_LocalPosition: {x: -0.98, y: -1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4647589507430368}
@@ -96,8 +96,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &60167867871095892
-PolygonCollider2D:
+--- !u!61 &61693648737543590
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -118,25 +118,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.040403843, y: 0.31432182}
-      - {x: -0.03479719, y: 0.31360048}
-      - {x: -0.055065155, y: 0.20046723}
-      - {x: -0.25254536, y: 0.08432841}
-      - {x: -0.3499999, y: 0.049616694}
-      - {x: -0.3499999, y: -0.124531925}
-      - {x: -0.0719738, y: 0.0009846687}
-      - {x: -0.046373367, y: -0.15216488}
-      - {x: -0.23800516, y: -0.23509973}
-      - {x: -0.2385354, y: -0.30532986}
-      - {x: 0.24130535, y: -0.31862563}
-      - {x: 0.21894836, y: -0.22723144}
-      - {x: 0.05399561, y: -0.18251747}
-      - {x: 0.050538063, y: -0.024380028}
-      - {x: 0.33032966, y: -0.11518407}
-      - {x: 0.36305594, y: 0.057669222}
-      - {x: 0.048389435, y: 0.16763806}
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.65}
+  m_EdgeRadius: 0
 --- !u!95 &95365231021644696
 Animator:
   serializedVersion: 3
@@ -183,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 1
-  velocidade: 3
+  velocidade: 1
   current_points: 0
   current_fuel: 0
 --- !u!114 &114309573703096462
