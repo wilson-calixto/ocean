@@ -169,7 +169,8 @@ MonoBehaviour:
   attackDamage: 1
   velocidade: 1
   current_points: 0
-  current_fuel: 0
+  current_fuel: 100
+  max_fuel: 100
 --- !u!114 &114309573703096462
 MonoBehaviour:
   m_ObjectHideFlags: 1
